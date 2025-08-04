@@ -6,7 +6,7 @@
 
 section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -37,5 +37,47 @@ img {
 }
 
 .status {
-  color: gray;
+  color: #c3aca3;
+  font-size: 12px;
+}
+
+.chat {
+  width: 90%;
+}
+
+.chat-header {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20%;
+  background-color: #f6f8f9;
+  border-bottom: 2px solid #e1e1e1;
+  border-top: 2px solid #e1e1e1;
+}
+
+.message-sent {
+  justify-items: flex-end;
+  background-color: #e4f2f7;
+  margin-left: auto;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.message-received {
+  background-color: #e1e1e1;
+  margin-right: auto;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.timestamp {
+  color: #c3aca3;
+  font-size: 12px;
+
 }
