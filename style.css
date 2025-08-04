@@ -49,6 +49,7 @@ img {
   display: flex;
   gap: 10px;
   justify-content: start;
+  align-items: center;
 }
 
 .chat-messages {
@@ -79,5 +80,29 @@ img {
 .timestamp {
   color: #c3aca3;
   font-size: 12px;
+}
 
+.header-right {
+  padding: 10px;
+}
+
+.chat-actions {
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 5px;
+  padding-top: 3px;
+}
+
+button {
+  font-size: 15px;
+  border: 1px solid white;
+  color: white;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e1e1e1;
 }
