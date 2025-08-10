@@ -2,47 +2,78 @@
   padding: 0;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
 }
 
 section {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px;
 }
 
 .sidebar {
   width: 20%;
-  padding-bottom: 15%;
+  padding: 10px;
   border-right: 2px solid #e1e1e1;
 }
 
 .search {
-  padding-right: 30%;
-  padding-bottom: 5%;
+  padding: 10px;
   border-color: #e1e1e1;
   border-radius: 5px;
-  color: #e1e1e1;
+  border-width: 1px;
   font-size: 15px;
+  width: 100%;
+}
+
+.contact-list {
+  margin-left: 20px;
 }
 
 .contact {
   display: flex;
   justify-content: flex-start;
-  padding-top: 20px;
   gap: 10px;
+  padding: 10px;
+}
+
+span {
+  font-size: 20px;
+  color: green;
+}
+
+.aiden {
+  background-color: #e1e1e1;
+  border-radius: 3px;
 }
 
 img {
   max-width: 40px;
+  border-radius: 100%;
 }
 
-.status {
+.status-online {
   color: #c3aca3;
   font-size: 12px;
 }
 
+.status-online::before {
+  content: "• ";
+  color: green;
+}
+
+.status-offline {
+  color: #c3aca3;
+  font-size: 12px;
+}
+
+.status-offline::before {
+  content: "• ";
+  color: red;
+}
+
 .chat {
-  width: 90%;
+  width: 80%;
 }
 
 .chat-header {
@@ -68,6 +99,8 @@ img {
   margin-left: auto;
   padding: 7px;
   border-radius: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 
 .message-received {
@@ -75,6 +108,7 @@ img {
   margin-right: auto;
   padding: 7px;
   border-radius: 10px;
+  margin-left: 15px;
 }
 
 .timestamp {
@@ -83,7 +117,7 @@ img {
 }
 
 .header-right {
-  padding: 10px;
+  padding: 15px;
 }
 
 .chat-actions {
@@ -105,4 +139,35 @@ button {
 
 button:hover {
   background-color: #e1e1e1;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 15px;
+}
+
+.send-messages {
+  padding-right: 83%;
+  margin-right: auto;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  border-color: #e1e1e1;
+  border-width: 1px;
+  color: #e1e1e1;
+  text-align: start, center;
+}
+
+.plane {
+  font-size: 20px;
+  border: 1px solid white;
+  color: white;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+@media (max-width:880px) {
+  .sidebar {
+    width: 30%;
+  }
 }
