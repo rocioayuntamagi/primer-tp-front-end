@@ -111,6 +111,11 @@ img {
   margin-left: 15px;
 }
 
+.responsive-btn {
+  display: none;
+}
+
+
 .timestamp {
   color: #c3aca3;
   font-size: 12px;
@@ -144,17 +149,18 @@ button:hover {
 .chat-footer {
   display: flex;
   padding: 15px;
+  gap: 10px;
 }
 
 .send-messages {
-  padding-right: 83%;
   margin-right: auto;
-  padding-bottom: 15px;
+  padding: 15px;
   border-radius: 5px;
   border-color: #e1e1e1;
   border-width: 1px;
   color: #e1e1e1;
   text-align: start, center;
+  padding-right: 83%;
 }
 
 .plane {
@@ -166,8 +172,57 @@ button:hover {
   cursor: pointer;
 }
 
+@media (max-width:1040px) {
+  .sidebar {
+    width: 30%;
+  }
+
+  .send-messages {
+    padding-right: 72%;
+  }
+}
+
+@media (max-width:900px) {
+  .send-messages {
+    padding-right: 72%;
+  }
+}
+
 @media (max-width:880px) {
   .sidebar {
     width: 30%;
+  }
+
+  .send-messages {
+    padding-right: 72%;
+  }
+}
+
+@media (max-width:768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .send-messages {
+    padding-right: 70%;
+  }
+
+  .chat {
+    width: 100%;
+  }
+
+  .responsive-btn {
+    display: block;
+  }
+}
+
+@media (max-width:480px) {
+
+  .titular-responsive {
+    display: block;
+  }
+
+  .send-messages {
+    padding-right: 55%;
   }
 }
