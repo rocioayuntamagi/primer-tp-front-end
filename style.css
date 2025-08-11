@@ -115,7 +115,6 @@ img {
   display: none;
 }
 
-
 .timestamp {
   color: #c3aca3;
   font-size: 12px;
@@ -172,7 +171,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-width:1040px) {
+@media (max-width:1115px) {
   .sidebar {
     width: 30%;
   }
@@ -184,17 +183,17 @@ button:hover {
 
 @media (max-width:900px) {
   .send-messages {
-    padding-right: 72%;
+    padding-right: 70%;
   }
 }
 
-@media (max-width:880px) {
+@media (max-width:800px) {
   .sidebar {
     width: 30%;
   }
 
   .send-messages {
-    padding-right: 72%;
+    padding-right: 60%;
   }
 }
 
@@ -213,6 +212,12 @@ button:hover {
 
   .responsive-btn {
     display: block;
+  }
+}
+
+@media (max-width:600px) {
+  .send-messages {
+    padding-right: 55%;
   }
 }
 
