@@ -151,7 +151,7 @@ button:hover {
   gap: 10px;
 }
 
-.send-messages {
+.text {
   margin-right: auto;
   padding: 15px;
   border-radius: 5px;
@@ -176,13 +176,13 @@ button:hover {
     width: 30%;
   }
 
-  .send-messages {
+  .text {
     padding-right: 72%;
   }
 }
 
 @media (max-width:900px) {
-  .send-messages {
+  .text {
     padding-right: 70%;
   }
 }
@@ -192,7 +192,7 @@ button:hover {
     width: 30%;
   }
 
-  .send-messages {
+  .text {
     padding-right: 60%;
   }
 }
@@ -202,7 +202,7 @@ button:hover {
     display: none;
   }
 
-  .send-messages {
+  .text {
     padding-right: 70%;
   }
 
@@ -216,7 +216,7 @@ button:hover {
 }
 
 @media (max-width:600px) {
-  .send-messages {
+  .text {
     padding-right: 55%;
   }
 }
@@ -227,7 +227,7 @@ button:hover {
     display: block;
   }
 
-  .send-messages {
+  .text {
     padding-right: 55%;
   }
 }
